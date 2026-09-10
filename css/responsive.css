@@ -645,3 +645,32 @@
     }
 
 }
+
+/* =========================================================
+   HOMEPAGE PROJECT IMAGES — DESKTOP ONLY
+   Teffo + Bahama
+========================================================= */
+
+@media (min-width: 861px) {
+
+    .teffo-visual,
+    .bahama-visual {
+        aspect-ratio: 1.9 / 1;
+    }
+
+    .teffo-screen {
+        position: absolute;
+        inset: 28px 0 0;
+        overflow: hidden;
+    }
+
+    .teffo-screen img,
+    .bahama-art img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+        display: block;
+    }
+
+}

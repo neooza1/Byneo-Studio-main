@@ -413,6 +413,10 @@ a {
    that page uses a full-screen fixed variant). This file
    only keeps the CTA row styling, which is reused by both.
 ========================================================= */
+.mobile-nav {
+    display: none;
+}
+
 
 .mobile-menu-cta {
     margin-top: 28px;

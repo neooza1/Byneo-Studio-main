@@ -2564,3 +2564,54 @@
   }
 }
 
+/* =========================================================
+   REAL PROJECT IMAGES — DESKTOP ONLY
+   Teffo + Bahama
+========================================================= */
+
+@media (min-width: 861px) {
+
+    .work-page .teffo-visual img,
+    .work-page .bahama-visual img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+        display: block;
+    }
+
+}
+
+/* TEFFO — DESKTOP */
+@media (min-width: 861px) {
+
+    .project-browser-small .browser-screen {
+        min-height: 0;
+    }
+
+    .project-browser-small .teffo-visual {
+        aspect-ratio: 1.82 / 1;
+    }
+
+    .project-browser-small .teffo-visual img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+        display: block;
+    }
+
+}
+
+/* BAHAMA — DESKTOP */
+@media (min-width: 861px) {
+
+    .bahama-visual img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+        display: block;
+    }
+
+}
