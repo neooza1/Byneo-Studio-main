@@ -5,6 +5,40 @@
 
 
 /* =========================================================
+   ICON GLYPHS (↗ / ↓)
+
+   These are plain Unicode characters, not images. DM Sans
+   and Space Grotesk don't contain arrow glyphs, so without
+   this rule some mobile browsers fall back to a colorful
+   emoji font for them instead of a plain text glyph. Forcing
+   a font stack that actually has the character — plus the
+   text-presentation variation selector below — keeps them
+   monochrome and inheriting the surrounding text color.
+========================================================= */
+
+.button-arrow,
+.nav-cta span,
+.mobile-menu-cta span,
+.text-link span,
+.project-arrow,
+.project-symbol,
+.orb-arrow,
+.explore-work strong,
+.btn span {
+    font-family:
+        -apple-system,
+        "Segoe UI Symbol",
+        Roboto,
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-variant-emoji: text;
+    font-style: normal;
+}
+
+
+/* =========================================================
    DESIGN TOKENS
 ========================================================= */
 
@@ -1186,7 +1220,7 @@ a {
 
     inset: 28px 0 0;
 
-    padding: 35px;
+    overflow: hidden;
 
     background:
         linear-gradient(
@@ -1245,21 +1279,18 @@ a {
 }
 
 .bahama-art {
-    width: 72%;
+    width: 100%;
+    height: 100%;
 
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    display: block;
 
     color: #14211b;
-
-    transform: rotate(-4deg);
 
     transition: transform 700ms var(--ease);
 }
 
 .project-card:hover .bahama-art {
-    transform: rotate(0deg) scale(1.02);
+    transform: scale(1.03);
 }
 
 .bahama-art span {

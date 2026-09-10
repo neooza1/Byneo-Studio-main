@@ -236,6 +236,10 @@
     padding-top: 50px;
   }
 
+  .mini-browser {
+    inset: 3%;
+  }
+
   .browser-screen {
     min-height: 0;
   }

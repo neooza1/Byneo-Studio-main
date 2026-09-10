@@ -10,12 +10,16 @@
 ========================================================= */
 
 .work-page {
+  /* These alias the real tokens defined once in main.css's :root
+     (which is also loaded on this page) instead of keeping a
+     second hardcoded copy that could silently drift out of sync
+     on a future rebrand/color update. */
   --work-black: #050806;
-  --work-dark: #08110e;
-  --work-dark-soft: #0d1713;
-  --work-paper: #f1eee5;
-  --work-paper-soft: #e8e4d9;
-  --work-lime: #c8ff48;
+  --work-dark: var(--bg-dark);
+  --work-dark-soft: var(--bg-dark-soft);
+  --work-paper: var(--paper);
+  --work-paper-soft: var(--paper-soft);
+  --work-lime: var(--lime);
 
   --work-muted: rgba(241, 238, 229, 0.58);
   --work-muted-dark: rgba(5, 8, 6, 0.58);
@@ -2441,12 +2445,12 @@
    These overrides do not alter the Work hero or other sections.
 ========================================================= */
 
-/* Website screenshots: show the supplied screenshots cleanly
-   instead of cropping them into the old placeholder proportions. */
+/* Real screenshots: fill the card completely (object-fit: cover
+   crops slightly rather than leaving empty letterbox bars). */
 
 .project-browser-small .browser-screen.teffo-visual {
   min-height: 0;
-  aspect-ratio: 1777 / 977;
+  aspect-ratio: 16 / 9;
   background: #0a1020;
 }
 
@@ -2454,7 +2458,7 @@
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
 }
 
@@ -2462,7 +2466,7 @@
 
 .bahama-visual {
   min-height: 0;
-  aspect-ratio: 1845 / 932;
+  aspect-ratio: 16 / 9;
   padding: 0;
   background: #111914;
 }
@@ -2471,7 +2475,7 @@
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
 }
 
