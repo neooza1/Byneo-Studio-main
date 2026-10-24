@@ -1,0 +1,448 @@
+/* =========================================================
+   BYNEO STUDIO — ADDITIONS
+   New sections (services, process, FAQ) + fixes.
+   Loaded after main.css and responsive.css.
+========================================================= */
+
+
+/* ---------- Content stays visible if JavaScript fails ---------- */
+
+html:not(.js) .reveal,
+html:not(.js) .work-page .reveal {
+    opacity: 1;
+    transform: none;
+}
+
+
+/* ---------- Shorter loader: one quick beat, not a 2-second wall ---------- */
+
+.page-loader {
+    animation: loaderExit 450ms var(--ease) 350ms forwards;
+}
+
+html:not(.js) .page-loader {
+    display: none;
+}
+
+
+/* ---------- Skip link (keyboard users) ---------- */
+
+.skip-link {
+    position: absolute;
+    left: 16px;
+    top: -60px;
+    z-index: 10000;
+
+    padding: 12px 18px;
+    border-radius: 999px;
+
+    background: var(--lime);
+    color: var(--bg-dark);
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.skip-link:focus {
+    top: 16px;
+}
+
+
+/* ---------- Images ---------- */
+
+img {
+    height: auto;
+}
+
+img.fit-contain,
+img.fit-cover {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+img.fit-contain { object-fit: contain; }
+img.fit-cover { object-fit: cover; object-position: top center; }
+
+
+/* ---------- Hero: grows with its content instead of a fixed height ---------- */
+
+.hero {
+    height: auto;
+    max-height: none;
+    min-height: min(100svh, 900px);
+    padding: 120px 0 90px;
+}
+
+.hero-inner {
+    padding-top: 0;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.button-ghost {
+    border: 1px solid var(--border-dark);
+    color: var(--text-light);
+}
+
+.button-ghost:hover {
+    border-color: rgba(241, 238, 229, 0.4);
+}
+
+
+/* ---------- Featured project links ---------- */
+
+.link-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px 28px;
+}
+
+
+/* ---------- Services (dark) ---------- */
+
+.services-section {
+    padding: 150px 0;
+
+    background: var(--bg-dark);
+    color: var(--text-light);
+}
+
+.services-section .section-number {
+    color: var(--text-muted);
+}
+
+.services-section .section-heading-wrap h2 span {
+    color: var(--lime);
+}
+
+.services-section .section-heading-wrap p {
+    color: rgba(241, 238, 229, 0.62);
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+
+    border-top: 1px solid var(--border-dark);
+}
+
+.service {
+    padding: 40px 36px 10px 0;
+}
+
+.service + .service {
+    padding-left: 36px;
+    border-left: 1px solid var(--border-dark);
+}
+
+.service h3 {
+    margin: 0 0 16px;
+
+    font-family: var(--font-display);
+    font-size: clamp(28px, 3vw, 40px);
+    font-weight: 600;
+    letter-spacing: -0.05em;
+    line-height: 1;
+}
+
+.service-primary h3 {
+    color: var(--lime);
+    font-size: clamp(36px, 4vw, 56px);
+}
+
+.service p {
+    margin: 0;
+    max-width: 38ch;
+
+    color: rgba(241, 238, 229, 0.66);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* ---------- Process (paper) ---------- */
+
+.process-section {
+    padding: 150px 0;
+
+    background: var(--paper);
+    color: var(--text-dark);
+}
+
+.process-list {
+    list-style: none;
+    counter-reset: step;
+
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+}
+
+.process-list li {
+    counter-increment: step;
+
+    padding-top: 22px;
+    border-top: 2px solid var(--text-dark);
+}
+
+.process-list li::before {
+    content: counter(step);
+
+    display: block;
+    margin-bottom: 44px;
+
+    font-family: var(--font-display);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.process-list h3 {
+    margin: 0 0 12px;
+
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+}
+
+.process-list p {
+    margin: 0;
+
+    color: var(--text-muted-dark);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* ---------- FAQ (paper, continues from process) ---------- */
+
+.faq-section {
+    padding: 0 0 150px;
+
+    background: var(--paper);
+    color: var(--text-dark);
+}
+
+.faq-list {
+    border-top: 1px solid var(--border-light);
+}
+
+.faq-list details {
+    border-bottom: 1px solid var(--border-light);
+}
+
+.faq-list summary {
+    position: relative;
+
+    padding: 28px 56px 28px 0;
+
+    cursor: pointer;
+    list-style: none;
+
+    font-family: var(--font-display);
+    font-size: clamp(20px, 2.2vw, 28px);
+    font-weight: 500;
+    letter-spacing: -0.03em;
+}
+
+.faq-list summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-list summary::after {
+    content: "+";
+
+    position: absolute;
+    right: 4px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-family: var(--font-body);
+    font-size: 26px;
+    font-weight: 400;
+
+    transition: transform var(--transition-fast);
+}
+
+.faq-list details[open] summary::after {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.faq-list summary:focus-visible {
+    outline-color: var(--text-dark);
+}
+
+.faq-list details p {
+    margin: 0;
+    max-width: 62ch;
+    padding: 0 0 30px;
+
+    color: var(--text-muted-dark);
+    font-size: 16px;
+    line-height: 1.65;
+}
+
+.faq-list details a {
+    border-bottom: 1px solid currentColor;
+    color: var(--text-dark);
+}
+
+
+/* ---------- Contact actions ---------- */
+
+.contact-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 18px 32px;
+}
+
+.contact-email {
+    font-size: 15px;
+}
+
+
+/* ---------- Footer: links are readable size ---------- */
+
+.footer-right {
+    font-size: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer-right a:hover {
+    color: var(--lime);
+}
+
+
+/* ---------- Case study: second image (reviews) ---------- */
+
+.case-proof {
+    margin-top: 48px;
+}
+
+.case-proof figure {
+    margin: 0;
+    overflow: hidden;
+    border-radius: 16px;
+    background: #fff;
+}
+
+.case-proof-unused {
+    margin-top: 14px;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+
+/* ---------- Tablet ---------- */
+
+@media (max-width: 1000px) {
+
+    .service-list {
+        grid-template-columns: 1fr;
+    }
+
+    .service,
+    .service + .service {
+        padding: 32px 0;
+        border-left: 0;
+    }
+
+    .service + .service {
+        border-top: 1px solid var(--border-dark);
+    }
+
+    .process-list {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 48px;
+    }
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 860px) {
+
+    .hero {
+        padding: 110px 0 70px;
+    }
+
+    .hero-top {
+        margin-bottom: 48px;
+        flex-wrap: wrap;
+        gap: 10px 20px;
+    }
+
+    .hero-title {
+        font-size: clamp(44px, 11.5vw, 80px);
+        overflow-wrap: anywhere;
+    }
+
+    .hero-actions,
+    .hero-actions .button {
+        width: 100%;
+    }
+
+    .hero-actions .button {
+        justify-content: space-between;
+    }
+
+    .services-section,
+    .process-section {
+        padding: 100px 0;
+    }
+
+    .faq-section {
+        padding-bottom: 100px;
+    }
+
+    .process-list {
+        grid-template-columns: 1fr;
+        row-gap: 36px;
+    }
+
+    .process-list li::before {
+        margin-bottom: 20px;
+    }
+
+    .contact-actions .button {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+
+/* ---------- Work page: proof caption + Teffo live link ---------- */
+
+.case-proof-caption {
+    margin: 14px 0 0;
+    font-size: 14px;
+    line-height: 1.5;
+    opacity: 0.7;
+}
+
+.teffo-live {
+    margin: 4px 0 26px;
+}
+
+@media (max-width: 860px) {
+    .case-study-cta h3 br,
+    .final-cta-inner h2 br {
+        display: none;
+    }
+}
+
+/* Anchor links land below the fixed header, not under it */
+section[id] {
+    scroll-margin-top: 76px;
+}

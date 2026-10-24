@@ -10,11 +10,9 @@ This repository contains the ongoing development of the ByNeo Studio website and
 
 ## CURRENT STATUS
 
- **REBUILD IN PROGRESS**
+**LIVE** at https://byneoportfolio.netlify.app
 
-The ByNeo website is currently being rebuilt as part of a broader studio rebrand.
-
-The public site is intentionally being kept minimal while the new identity, website system, portfolio and client work are developed in private.
+Images live in `assets/work/` (WebP, lowercase, no spaces). Netlify file names are case-sensitive, so always use lowercase-with-dashes names.
 
 The current direction focuses on:
 

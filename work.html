@@ -1,30 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-ZA">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>document.documentElement.classList.add('js');</script>
 
-  <title>Work — ByNeo Studio</title>
+  <title>Our Work | ByNeo Studio, Web Design in Gauteng</title>
   <meta
     name="description"
-    content="Selected work by ByNeo Studio — websites, digital experiences and brand systems built for ambitious businesses."
+    content="Websites and brands ByNeo Studio has built for South African businesses, including Mokwatedi Dental Clinic and Teffo Consulting."
   />
 
   <link rel="canonical" href="https://byneoportfolio.netlify.app/work">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/icon-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/icon-16.png">
-  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
-  <link rel="shortcut icon" href="assets/icons/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
   <meta name="theme-color" content="#08110e">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="ByNeo Studio">
-  <meta property="og:title" content="Work — ByNeo Studio">
-  <meta property="og:description" content="Selected work by ByNeo Studio — websites, digital experiences and brand systems built for ambitious businesses.">
+  <meta property="og:title" content="Our Work | ByNeo Studio">
+  <meta property="og:description" content="Websites and brands built for South African businesses.">
   <meta property="og:image" content="https://byneoportfolio.netlify.app/assets/icons/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -32,8 +31,8 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Work — ByNeo Studio">
-  <meta name="twitter:description" content="Selected work by ByNeo Studio — websites, digital experiences and brand systems built for ambitious businesses.">
+  <meta name="twitter:title" content="Our Work | ByNeo Studio">
+  <meta name="twitter:description" content="Websites and brands built for South African businesses.">
   <meta name="twitter:image" content="https://byneoportfolio.netlify.app/assets/icons/og-image.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -45,16 +44,17 @@
    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/work.css">
    <link rel="stylesheet" href="css/responsive.css">
-  
+   <link rel="stylesheet" href="css/additions.css">
 </head>
 
 <body class="work-page">
+
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- PAGE LOADER -->
   <div class="page-loader" aria-hidden="true">
     <div class="loader-inner">
       <span class="loader-mark">BYNEO.</span>
-      <span class="loader-status">INITIALISING</span>
     </div>
   </div>
 
@@ -68,8 +68,10 @@
       </a>
 
       <nav class="desktop-nav" aria-label="Primary navigation">
-        <a href="work.html" class="active">Work</a>
-        <a href="index.html#contact">Start a Project</a>
+        <a href="work.html" class="active" aria-current="page">Work</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="index.html#contact">Start a project</a>
       </nav>
 
       <button
@@ -86,13 +88,15 @@
     </div>
 
     <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
-      <a href="work.html">Work</a>
-      <a href="index.html#contact">Start a Project</a>
+      <a href="work.html" aria-current="page">Work</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="index.html#contact">Start a project</a>
     </div>
   </header>
 
 
-  <main>
+  <main id="main">
 
     <!-- =========================================
          WORK HERO
@@ -117,9 +121,8 @@
 
           <p class="work-hero-description">
             Websites, digital experiences and visual systems built to make
-            businesses clearer, more credible and easier to choose. ByNeo's
-            own site is still being rebuilt — this is the proof in the
-            meantime.
+            businesses clearer, more credible and easier to choose. Real
+            clients, live sites.
           </p>
 
           <div class="work-hero-meta">
@@ -133,7 +136,7 @@
 
       <!-- FLOATING SCROLL CIRCLE -->
       <a
-        href="#mokwatledi"
+        href="#mokwatedi"
         class="scroll-orb"
         aria-label="Explore the work"
       >
@@ -165,7 +168,7 @@
     <!-- =========================================
          FEATURED PROJECT
     ========================================== -->
-    <section class="case-study case-study-featured" id="mokwatledi">
+    <section class="case-study case-study-featured" id="mokwatedi">
 
       <div class="container">
 
@@ -178,13 +181,14 @@
           <div class="case-study-heading reveal">
 
             <h2>
-              Mokwatledi<br />
+              Mokwatedi<br />
               Dental Clinic<span>.</span>
             </h2>
 
             <p>
-              A digital experience designed to turn an established dental
-              practice into a stronger online first impression.
+              A website for an established dental practice in Cosmo City,
+              built to make a stronger first impression online and make
+              booking easy.
             </p>
 
           </div>
@@ -203,7 +207,7 @@
             </div>
 
             <div class="browser-address">
-              mokwatledidentalclinic.co.za
+              mokwatedidental.co.za
             </div>
 
             <div class="browser-index">
@@ -214,8 +218,9 @@
           <div class="browser-screen mokwatledi-visual">
 
             <img
-              src="assets/images/mokwatedi showcase.png"
-              alt="Mokwatledi Dental Clinic website"
+              src="assets/work/mokwatedi-dental-website.webp"
+              alt="Homepage of the Mokwatedi Dental Clinic website"
+              width="1600" height="810"
               loading="lazy"
               decoding="async"
             />
@@ -276,6 +281,21 @@
         </div>
 
 
+        <!-- PROOF: REVIEWS -->
+        <div class="case-proof reveal">
+          <figure>
+            <img
+              src="assets/work/mokwatedi-dental-reviews.webp"
+              alt="Patient Google reviews shown on the Mokwatedi Dental Clinic website"
+              width="1600" height="764"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+          <p class="case-proof-caption">Real patient Google reviews, built into the site so new patients see them before they book.</p>
+        </div>
+
+
         <!-- PROJECT CTA -->
         <div class="case-study-cta reveal">
 
@@ -289,12 +309,12 @@
           </div>
 
           <div class="cta-actions">
-            <a href="https://wa.me/27636929023" class="text-link" target="_blank" rel="noopener">
+            <a href="https://wa.me/27636929023" class="text-link" target="_blank" rel="noopener noreferrer">
               WhatsApp ByNeo <span>↗︎</span>
             </a>
 
-            <a href="index.html#contact" class="text-link">
-              Start a Project <span>↗︎</span>
+            <a href="https://mokwatedidental.co.za" class="text-link" target="_blank" rel="noopener noreferrer">
+              Visit live site <span>↗︎</span>
             </a>
           </div>
 
@@ -330,6 +350,10 @@
               expertise with more clarity and confidence.
             </p>
 
+            <a href="https://teffoconsultingelectricians.netlify.app" class="text-link teffo-live reveal" target="_blank" rel="noopener noreferrer">
+              Visit live site <span>↗︎</span>
+            </a>
+
             <div class="project-tags reveal">
               <span>WEB DESIGN</span>
               <span>UX</span>
@@ -340,7 +364,7 @@
               href="https://wa.me/27636929023?text=Hi%20ByNeo%2C%20I%27d%20like%20something%20like%20the%20Teffo%20Consulting%20site."
               class="project-arrow reveal"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
             >
               Discuss a project like this
               <span>↗︎</span>
@@ -360,7 +384,7 @@
               </div>
 
               <div class="browser-address">
-                teffoconsulting
+                teffoconsultingelectricians.netlify.app
               </div>
 
               <div class="browser-index">
@@ -372,8 +396,9 @@
             <div class="browser-screen teffo-visual">
 
               <img
-                src="assets/images/Teffo Consultants.png"
-                alt="Teffo Electrical Consultants website"
+                src="assets/work/teffo-consulting-website.webp"
+                alt="Teffo Consulting electrical consultancy website"
+                width="1600" height="880"
                 loading="lazy"
                 decoding="async"
               />
@@ -410,8 +435,8 @@
             </h2>
 
             <p>
-              An exploration of how an art-led business could translate
-              atmosphere, collection and identity into a digital experience.
+              A self-initiated concept exploring how an art gallery could
+              carry its atmosphere, collection and identity onto the web.
             </p>
 
           </div>
@@ -422,8 +447,9 @@
         <div class="bahama-visual reveal">
 
           <img
-            src="assets/images/Bhamas.png"
-            alt="Bahamas Gallery website concept"
+            src="assets/work/bahama-gallery-concept.webp"
+            alt="Bahama Gallery website concept"
+            width="1600" height="808"
             loading="lazy"
             decoding="async"
           />
@@ -470,7 +496,7 @@
             href="https://www.instagram.com/byneo.studio.za/"
             class="other-project reveal"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
             aria-label="See more creative work like BC House Cafe on Instagram"
           >
 
@@ -481,7 +507,7 @@
             <div class="other-project-visual bc-house-visual">
 
               <img
-                src="assets/images/BC house poster.jpeg"
+                src="assets/work/bc-house-cafe-poster.webp" width="1254" height="1254"
                 alt="BC House Cafe promotional poster"
                 loading="lazy"
                 decoding="async"
@@ -506,7 +532,7 @@
             href="https://www.instagram.com/byneo.studio.za/"
             class="other-project reveal"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
             aria-label="See more brand work like Nego Tiling & Projects on Instagram"
           >
 
@@ -517,7 +543,7 @@
             <div class="other-project-visual nego-visual">
 
               <img
-                src="assets/images/Nego tiling.jpeg"
+                src="assets/work/nego-tiling-brand.webp" width="1280" height="640"
                 alt="Nego Tiling and Projects design"
                 loading="lazy"
                 decoding="async"
@@ -542,7 +568,7 @@
             href="https://www.instagram.com/byneo.studio.za/"
             class="other-project reveal"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
             aria-label="See more creative work like Kasi Gamers on Instagram"
           >
 
@@ -553,7 +579,7 @@
             <div class="other-project-visual kasi-visual">
 
               <img
-                src="assets/images/Kasi Gamers.jpeg"
+                src="assets/work/kasi-gamers-design.webp" width="1536" height="1024"
                 alt="Kasi Gamers design"
                 loading="lazy"
                 decoding="async"
@@ -598,8 +624,8 @@
           </h2>
 
           <p class="reveal">
-            Tell us what you're working on. We'll figure out whether
-            ByNeo is the right fit.
+            Send your business name and what you need. You'll get a
+            straight answer on whether ByNeo is the right fit.
           </p>
 
           <div class="final-cta-actions reveal">
@@ -608,7 +634,7 @@
               href="https://wa.me/27636929023?text=Hi%20ByNeo%20Studio%2C%20I%27d%20like%20to%20start%20a%20project."
               class="btn btn-lime"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
             >
               Start a Project
               <span>↗︎</span>
@@ -618,7 +644,7 @@
               href="https://wa.me/27636929023?text=Hi%20ByNeo%20Studio%2C%20I%20have%20a%20quick%20question."
               class="btn btn-outline-light"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
             >
               WhatsApp us
               <span>↗︎</span>
@@ -656,7 +682,7 @@
       <div class="footer-bottom">
 
         <span>
-          © <span id="year"></span> ByNeo Studio
+          © <span id="year">2026</span> ByNeo Studio
         </span>
 
         <div class="footer-links">
@@ -675,7 +701,7 @@
   </footer>
 
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 
 </body>
 </html>

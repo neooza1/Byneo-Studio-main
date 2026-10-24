@@ -2,12 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://byneoportfolio.netlify.app/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-10-24</lastmod>
   </url>
   <url>
     <loc>https://byneoportfolio.netlify.app/work</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-10-24</lastmod>
   </url>
 </urlset>

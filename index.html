@@ -1,585 +1,431 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-ZA">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>document.documentElement.classList.add('js');</script>
 
-    <title>ByNeo Studio — Digital Experiences</title>
-
-    <meta
-        name="description"
-        content="ByNeo Studio builds websites and digital experiences for businesses whose reputation deserves a stronger online presence."
-    >
-
+    <title>ByNeo Studio | Website Design &amp; Branding in Gauteng</title>
+    <meta name="description" content="ByNeo Studio designs websites and brands for South African businesses that need to look ready online. Based in Gauteng. Start a project on WhatsApp.">
     <link rel="canonical" href="https://byneoportfolio.netlify.app/">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/icon-32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/icon-16.png">
-    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
-    <link rel="shortcut icon" href="assets/icons/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32.png">
+    <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
     <meta name="theme-color" content="#08110e">
 
-    <!-- Open Graph -->
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_ZA">
     <meta property="og:site_name" content="ByNeo Studio">
-    <meta property="og:title" content="ByNeo Studio — Digital Experiences">
-    <meta property="og:description" content="ByNeo Studio builds websites and digital experiences for businesses whose reputation deserves a stronger online presence. Currently rebuilding — here's the proof in the meantime.">
+    <meta property="og:title" content="ByNeo Studio | Website Design &amp; Branding in Gauteng">
+    <meta property="og:description" content="Websites, brand identity and digital creative for South African businesses. Built to make businesses look ready.">
     <meta property="og:image" content="https://byneoportfolio.netlify.app/assets/icons/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="ByNeo Studio: Built to make businesses look ready.">
     <meta property="og:url" content="https://byneoportfolio.netlify.app/">
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="ByNeo Studio — Digital Experiences">
-    <meta name="twitter:description" content="ByNeo Studio builds websites and digital experiences for businesses whose reputation deserves a stronger online presence.">
+    <meta name="twitter:title" content="ByNeo Studio | Website Design &amp; Branding in Gauteng">
+    <meta name="twitter:description" content="Websites, brand identity and digital creative for South African businesses. Built to make businesses look ready.">
     <meta name="twitter:image" content="https://byneoportfolio.netlify.app/assets/icons/og-image.png">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://byneoportfolio.netlify.app/#business",
+          "name": "ByNeo Studio",
+          "alternateName": "ByNeo Studio ZA",
+          "description": "ByNeo Studio is a web design and branding studio in Gauteng, South Africa. It designs and builds websites, brand identities and digital creative for South African businesses.",
+          "slogan": "Built to make businesses look ready.",
+          "url": "https://byneoportfolio.netlify.app/",
+          "logo": "https://byneoportfolio.netlify.app/assets/icons/icon-512.png",
+          "image": "https://byneoportfolio.netlify.app/assets/icons/og-image.png",
+          "email": "byneostudio.za@gmail.com",
+          "telephone": "+27636929023",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Boksburg",
+            "addressRegion": "Gauteng",
+            "addressCountry": "ZA"
+          },
+          "areaServed": [
+            { "@type": "AdministrativeArea", "name": "Gauteng" },
+            { "@type": "Country", "name": "South Africa" }
+          ],
+          "knowsAbout": ["Website design", "Web development", "Brand identity", "Logo design", "Graphic design", "Social media design"],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Services",
+            "itemListElement": [
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Website design and development" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Brand identity" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Digital creative: posters, social media graphics and banners" } }
+            ]
+          },
+          "sameAs": ["https://www.instagram.com/byneo.studio.za/"]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://byneoportfolio.netlify.app/#website",
+          "url": "https://byneoportfolio.netlify.app/",
+          "name": "ByNeo Studio",
+          "publisher": { "@id": "https://byneoportfolio.netlify.app/#business" }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            { "@type": "Question", "name": "What does ByNeo Studio do?",
+              "acceptedAnswer": { "@type": "Answer", "text": "ByNeo Studio designs and builds websites for South African businesses. It also does brand identity (logos, colours and type) and digital creative such as posters, social media graphics and banners." } },
+            { "@type": "Question", "name": "Where is ByNeo Studio based?",
+              "acceptedAnswer": { "@type": "Answer", "text": "ByNeo Studio is based in Boksburg, Gauteng, South Africa, and works with businesses across the country remotely." } },
+            { "@type": "Question", "name": "Who does ByNeo Studio work with?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Small and medium businesses with real customers whose online presence is missing, outdated or doesn't match their reputation, including clinics, consultants, trades and local service businesses. New businesses setting up professionally are welcome too." } },
+            { "@type": "Question", "name": "How much does a website cost?",
+              "acceptedAnswer": { "@type": "Answer", "text": "It depends on what your business needs. Before any work starts you get a short quote with two options and the price up front." } },
+            { "@type": "Question", "name": "How do I start a project with ByNeo Studio?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Send a WhatsApp message to +27 63 692 9023 or email byneostudio.za@gmail.com with your business name and what you need." } }
+          ]
+        }
+      ]
+    }
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-        rel="stylesheet"
-    >
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/additions.css">
 </head>
 
 <body>
 
-    <!-- =====================================================
-         PAGE LOADER
-    ====================================================== -->
+    <a class="skip-link" href="#main">Skip to content</a>
 
     <div class="page-loader" aria-hidden="true">
         <div class="loader-inner">
             <span class="loader-mark">BYNEO.</span>
-            <span class="loader-status">INITIALISING</span>
         </div>
     </div>
 
-
-    <!-- =====================================================
-         HEADER
-    ====================================================== -->
-
     <header class="site-header">
-
         <div class="container header-inner">
-
-            <a href="index.html" class="brand" aria-label="ByNeo Studio home">
-                BYNEO<span>.</span>
-            </a>
+            <a href="index.html" class="brand" aria-label="ByNeo Studio home">BYNEO<span>.</span></a>
 
             <nav class="desktop-nav" aria-label="Main navigation">
-
-                <a href="#work">Work</a>
-                <a href="work.html">Studio</a>
-
-                <a href="#contact" class="nav-cta">
-                    Start a Project
-                    <span>↗︎</span>
-                </a>
-
+                <a href="work.html">Work</a>
+                <a href="#services">Services</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact" class="nav-cta">Start a project <span aria-hidden="true">↗︎</span></a>
             </nav>
 
-
-            <button
-                class="mobile-menu-toggle"
-                type="button"
-                aria-label="Open navigation"
-                aria-expanded="false"
-                aria-controls="mobile-nav"
-            >
+            <button class="mobile-menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav">
                 <span></span>
                 <span></span>
             </button>
-
         </div>
-
-
-        <!-- Mobile Navigation -->
 
         <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
-
-            <a href="#work">Work</a>
-            <a href="work.html">Studio</a>
-
-            <a href="#contact" class="mobile-menu-cta">
-                Start a Project
-                <span>↗︎</span>
-            </a>
-
+            <a href="work.html">Work</a>
+            <a href="#services">Services</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact" class="mobile-menu-cta">Start a project <span aria-hidden="true">↗︎</span></a>
         </div>
-
     </header>
 
+    <main id="main">
 
-    <main>
-
-
-        <!-- =================================================
-             HERO
-        ================================================== -->
-
+        <!-- HERO -->
         <section class="hero">
-
             <div class="hero-grid"></div>
-
             <div class="hero-orb"></div>
-
 
             <div class="container hero-inner">
 
                 <div class="hero-top reveal">
-
                     <div class="status">
-
                         <span class="status-dot"></span>
-
-                        <span>BUILDING</span>
-
+                        <span>TAKING NEW PROJECTS</span>
                     </div>
-
-                    <span class="hero-index">
-                        01 / BYNEO
-                    </span>
-
+                    <span class="hero-index">GAUTENG, SOUTH AFRICA</span>
                 </div>
-
 
                 <div class="hero-content">
-
-                    <p class="eyebrow reveal reveal-delay-1">
-                        DIGITAL STUDIO · SOUTH AFRICA
-                    </p>
-
+                    <p class="eyebrow reveal reveal-delay-1">WEB DESIGN &amp; BRANDING STUDIO</p>
 
                     <h1 class="hero-title">
-
-                        <span class="title-line reveal reveal-delay-2">
-                            THE NEW
-                        </span>
-
-                        <span class="title-line title-accent reveal reveal-delay-3">
-                            BYNEO
-                        </span>
-
-                        <span class="title-line reveal reveal-delay-4">
-                            IS BEING BUILT<span class="title-dot">.</span>
-                        </span>
-
+                        <span class="title-line reveal reveal-delay-2">Websites that</span>
+                        <span class="title-line title-accent reveal reveal-delay-3">make businesses</span>
+                        <span class="title-line reveal reveal-delay-4">look ready<span class="title-dot">.</span></span>
                     </h1>
 
-
                     <div class="hero-bottom">
-
                         <p class="hero-description reveal reveal-delay-5">
-
-                            We're rebuilding ByNeo around a sharper idea:
-                            creating websites and digital experiences that make
-                            great businesses easier to trust.
-
+                            ByNeo Studio designs and builds websites, brands and digital creative
+                            for South African businesses. If people trust you in person but your
+                            online presence doesn't show it, that's what we fix.
                         </p>
 
-
                         <div class="hero-actions reveal reveal-delay-6">
-
-                            <a href="#work" class="button button-primary">
-
-                                <span>See what we’ve built</span>
-
-                                <span class="button-arrow">↓︎</span>
-
+                            <a href="https://wa.me/27636929023?text=Hi%20ByNeo%20Studio%2C%20I%27d%20like%20to%20start%20a%20project." class="button button-primary" target="_blank" rel="noopener noreferrer">
+                                <span>Start a project on WhatsApp</span>
+                                <span class="button-arrow" aria-hidden="true">↗︎</span>
                             </a>
-
+                            <a href="#work" class="button button-ghost">
+                                <span>See the work</span>
+                                <span class="button-arrow" aria-hidden="true">↓︎</span>
+                            </a>
                         </div>
-
                     </div>
-
                 </div>
-
-
-                <div class="hero-meta reveal reveal-delay-7">
-
-                    <span>01 — BUILDING</span>
-
-                    <span>02 — PROOF</span>
-
-                    <span>03 — NEXT</span>
-
-                </div>
-
             </div>
-
-
-            <div class="hero-scroll">
-
-                <span>SCROLL</span>
-
-                <span class="scroll-line"></span>
-
-            </div>
-
         </section>
 
 
-
-        <!-- =================================================
-             WORK
-        ================================================== -->
-
+        <!-- WORK -->
         <section class="work-section" id="work">
-
             <div class="container">
 
                 <div class="section-header reveal">
-
-                    <div>
-
-                        <span class="section-number">
-                            02 / WHILE WE BUILD
-                        </span>
-
-                    </div>
-
+                    <div><span class="section-number">SELECTED WORK</span></div>
                     <div class="section-heading-wrap">
-
-                        <h2>
-                            A look at what<br>
-                            we've already built<span>.</span>
-                        </h2>
-
-                        <p>
-                            The new experience is still being built.
-                            The work, however, is already happening.
-                        </p>
-
+                        <h2>Real businesses,<br>live online<span>.</span></h2>
+                        <p>Websites and brands built for South African businesses, from a dental clinic to an electrical consultancy.</p>
                     </div>
-
                 </div>
-
-
-
-                <!-- FEATURED PROJECT -->
 
                 <article class="featured-project reveal">
-
-                    <a href="work.html#mokwatledi" class="project-visual project-browser">
-
+                    <a href="work.html#mokwatedi" class="project-visual project-browser" aria-label="Mokwatedi Dental Clinic case study">
                         <div class="browser-top">
-
-                            <div class="browser-dots">
-
-                                <span></span>
-                                <span></span>
-                                <span></span>
-
-                            </div>
-
-                            <span class="browser-url">
-                                mokwatledi-dental.co.za
-                            </span>
-
+                            <div class="browser-dots"><span></span><span></span><span></span></div>
+                            <span class="browser-url">mokwatedidental.co.za</span>
                         </div>
-
-
                         <div class="browser-screen mokwatledi-screen">
-
-                            <img
-                                src="assets/images/Mokwatedi%20showcase.png"
-                                alt="Mokwatledi Dental Clinic website showcase"
-                                loading="lazy"
-                                decoding="async"
-                                style="width:100%;height:100%;object-fit:contain;display:block;"
-                            >
-
+                            <img src="assets/work/mokwatedi-dental-website.webp" alt="Homepage of the Mokwatedi Dental Clinic website designed by ByNeo Studio" width="1600" height="810" loading="lazy" decoding="async" class="fit-contain">
                         </div>
-
                     </a>
-
 
                     <div class="featured-project-info">
-
                         <div>
-
-                            <span class="project-label">
-                                FEATURED PROJECT
-                            </span>
-
-                            <h3>
-                                Mokwatledi<br>
-                                Dental Clinic
-                            </h3>
-
+                            <span class="project-label">WEBSITE · LIVE</span>
+                            <h3>Mokwatedi<br>Dental Clinic</h3>
                         </div>
-
-
                         <div class="project-details">
-
-                            <p>
-                                A digital experience designed to make a
-                                healthcare brand feel more credible,
-                                approachable and easier to navigate.
-                            </p>
-
-
-                            <a href="work.html#mokwatledi" class="text-link">
-
-                                View case study
-
-                                <span>↗︎</span>
-
-                            </a>
-
+                            <p>A website for a dental clinic in Cosmo City that makes the practice feel credible and approachable, shows real Google reviews, and puts booking one tap away.</p>
+                            <div class="link-row">
+                                <a href="work.html#mokwatedi" class="text-link">View case study <span aria-hidden="true">↗︎</span></a>
+                                <a href="https://mokwatedidental.co.za" class="text-link" target="_blank" rel="noopener noreferrer">Visit live site <span aria-hidden="true">↗︎</span></a>
+                            </div>
                         </div>
-
                     </div>
-
                 </article>
 
-
-
-                <!-- SECONDARY PROJECTS -->
-
                 <div class="project-grid">
-
-
                     <article class="project-card reveal">
-
-                        <a href="work.html#teffo" class="project-card-visual teffo-visual">
-
+                        <a href="work.html#teffo" class="project-card-visual teffo-visual" aria-label="Teffo Consulting project">
                             <div class="mini-browser">
-
-                                <div class="mini-browser-bar">
-
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-
-                                </div>
-
-
+                                <div class="mini-browser-bar"><span></span><span></span><span></span></div>
                                 <div class="teffo-screen">
-
-                                    <img
-                                        src="assets/images/Teffo%20Consultants.png"
-                                        alt="Teffo Consulting website"
-                                        loading="lazy"
-                                        decoding="async"
-                                        style="width:100%;height:100%;object-fit:cover;display:block;"
-                                    >
-
+                                    <img src="assets/work/teffo-consulting-website.webp" alt="Teffo Consulting electrical consultancy website" width="1600" height="880" loading="lazy" decoding="async" class="fit-cover">
                                 </div>
-
                             </div>
-
                         </a>
-
-
                         <div class="project-card-info">
-
                             <div>
-
-                                <span class="project-label">
-                                    WEBSITE
-                                </span>
-
-                                <h3>
-                                    Teffo Consulting
-                                </h3>
-
+                                <span class="project-label">WEBSITE</span>
+                                <h3>Teffo Consulting</h3>
                             </div>
-
-
-                            <a href="work.html#teffo" class="project-arrow">
-                                ↗︎
-                            </a>
-
+                            <a href="work.html#teffo" class="project-arrow" aria-label="View Teffo Consulting project">↗︎</a>
                         </div>
-
                     </article>
-
-
 
                     <article class="project-card reveal reveal-delay-1">
-
-                        <a href="work.html#bahama" class="project-card-visual bahama-visual">
-
+                        <a href="work.html#bahama" class="project-card-visual bahama-visual" aria-label="Bahama Gallery concept">
                             <div class="bahama-art">
-
-                                <img
-                                    src="assets/images/Bhamas.png"
-                                    alt="Bahama Gallery visual concept"
-                                    loading="lazy"
-                                    decoding="async"
-                                    style="width:100%;height:100%;object-fit:cover;display:block;"
-                                >
-
+                                <img src="assets/work/bahama-gallery-concept.webp" alt="Bahama Gallery website concept" width="1600" height="808" loading="lazy" decoding="async" class="fit-cover">
                             </div>
-
                         </a>
-
-
                         <div class="project-card-info">
-
                             <div>
-
-                                <span class="project-label">
-                                    CONCEPT
-                                </span>
-
-                                <h3>
-                                    Bahama Gallery
-                                </h3>
-
+                                <span class="project-label">CONCEPT</span>
+                                <h3>Bahama Gallery</h3>
                             </div>
-
-
-                            <a href="work.html#bahama" class="project-arrow">
-                                ↗︎
-                            </a>
-
+                            <a href="work.html#bahama" class="project-arrow" aria-label="View Bahama Gallery concept">↗︎</a>
                         </div>
-
                     </article>
-
                 </div>
 
-
-
-                <!-- EXPLORE -->
-
                 <div class="explore-work reveal">
-
-                    <a href="https://wa.me/27636929023?text=Hi%20ByNeo%20Studio%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer">
-
-                        <span>
-                            Talk to ByNeo on WhatsApp
-                        </span>
-
-                        <strong>
-                            ↗︎
-                        </strong>
-
+                    <a href="work.html">
+                        <span>See all our work</span>
+                        <strong aria-hidden="true">↗︎</strong>
                     </a>
-
                 </div>
 
             </div>
-
         </section>
 
 
+        <!-- SERVICES -->
+        <section class="services-section" id="services">
+            <div class="container">
 
-        <!-- =================================================
-             FINAL CTA
-        ================================================== -->
-
-        <section class="contact-section" id="contact">
-
-            <div class="container contact-inner">
-
-                <div class="contact-top reveal">
-
-                    <span class="section-number">
-                        03 / NEXT
-                    </span>
-
-                    <span class="contact-status">
-                        ● CURRENTLY BUILDING
-                    </span>
-
+                <div class="section-header reveal">
+                    <div><span class="section-number">SERVICES</span></div>
+                    <div class="section-heading-wrap">
+                        <h2>What we build<span>.</span></h2>
+                        <p>Websites come first. Branding and creative make sure everything around the website looks like the same business.</p>
+                    </div>
                 </div>
 
-
-                <div class="contact-content">
-
-                    <h2 class="reveal">
-
-                        Have a business<br>
-                        worth building for<span>?</span>
-
-                    </h2>
-
-
-                    <p class="contact-copy reveal reveal-delay-1">
-
-                        The new ByNeo is taking shape.
-                        If your business has the reputation but not
-                        the digital presence to match, let’s talk.
-
-                    </p>
-
-
-                    <a
-                        href="https://wa.me/27636929023?text=Hi%20ByNeo%20Studio%2C%20I%27d%20like%20to%20start%20a%20project." target="_blank" rel="noopener noreferrer"
-                        class="button button-dark reveal reveal-delay-2"
-                    >
-
-                        <span>Start a project</span>
-
-                        <span class="button-arrow">↗︎</span>
-
-                    </a>
-
+                <div class="service-list">
+                    <article class="service service-primary reveal">
+                        <h3>Websites</h3>
+                        <p>Fast, mobile-first websites that explain what you do, show proof that you're good at it, and make it easy to call, book or WhatsApp you. Set up so Google can find you.</p>
+                    </article>
+                    <article class="service reveal reveal-delay-1">
+                        <h3>Brand identity</h3>
+                        <p>Logo, colours and type that make your business look consistent on your signage, your socials and your website.</p>
+                    </article>
+                    <article class="service reveal reveal-delay-2">
+                        <h3>Digital creative</h3>
+                        <p>Posters, social media graphics, banners and signage for launches, events and everyday marketing.</p>
+                    </article>
                 </div>
 
             </div>
+        </section>
 
+
+        <!-- PROCESS -->
+        <section class="process-section" id="process">
+            <div class="container">
+
+                <div class="section-header reveal">
+                    <div><span class="section-number">HOW IT WORKS</span></div>
+                    <div class="section-heading-wrap">
+                        <h2>From message<br>to live site<span>.</span></h2>
+                    </div>
+                </div>
+
+                <ol class="process-list">
+                    <li class="reveal">
+                        <h3>Send a message</h3>
+                        <p>Tell us your business name, where you are and what you need. WhatsApp or email, whichever is easier.</p>
+                    </li>
+                    <li class="reveal reveal-delay-1">
+                        <h3>Get a clear quote</h3>
+                        <p>One page, two options, price first. No surprises later.</p>
+                    </li>
+                    <li class="reveal reveal-delay-2">
+                        <h3>We design and build</h3>
+                        <p>You see the work as it comes together and give feedback before anything goes live.</p>
+                    </li>
+                    <li class="reveal reveal-delay-3">
+                        <h3>Go live</h3>
+                        <p>We launch it, connect it to Google and hand it over so you know how it works.</p>
+                    </li>
+                </ol>
+
+            </div>
+        </section>
+
+
+        <!-- FAQ -->
+        <section class="faq-section" id="faq">
+            <div class="container">
+
+                <div class="section-header reveal">
+                    <div><span class="section-number">QUESTIONS</span></div>
+                    <div class="section-heading-wrap">
+                        <h2>Good to know<span>.</span></h2>
+                    </div>
+                </div>
+
+                <div class="faq-list reveal">
+                    <details>
+                        <summary>What does ByNeo Studio do?</summary>
+                        <p>We design and build websites for South African businesses. We also do brand identity (logos, colours and type) and digital creative such as posters, social media graphics and banners.</p>
+                    </details>
+                    <details>
+                        <summary>Where are you based?</summary>
+                        <p>Boksburg, Gauteng. We work with businesses across South Africa, so you don't need to be nearby.</p>
+                    </details>
+                    <details>
+                        <summary>Who do you work with?</summary>
+                        <p>Businesses with real customers whose online presence is missing, outdated or doesn't match their reputation: clinics, consultants, trades and local services. New businesses setting up properly are welcome too.</p>
+                    </details>
+                    <details>
+                        <summary>How much does a website cost?</summary>
+                        <p>It depends on what your business needs. Before any work starts you get a short quote with two options and the price up front.</p>
+                    </details>
+                    <details>
+                        <summary>Can you redesign the website I already have?</summary>
+                        <p>Yes. Send us the link and we'll tell you what we'd change first.</p>
+                    </details>
+                    <details>
+                        <summary>How do I start?</summary>
+                        <p>WhatsApp <a href="https://wa.me/27636929023" target="_blank" rel="noopener noreferrer">063 692 9023</a> or email <a href="mailto:byneostudio.za@gmail.com">byneostudio.za@gmail.com</a> with your business name and what you need.</p>
+                    </details>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- CONTACT -->
+        <section class="contact-section" id="contact">
+            <div class="container contact-inner">
+
+                <div class="contact-top reveal">
+                    <span class="section-number">START A PROJECT</span>
+                    <span class="contact-status">● TAKING NEW PROJECTS</span>
+                </div>
+
+                <div class="contact-content">
+                    <h2 class="reveal">Have a business<br>worth building for<span>?</span></h2>
+
+                    <p class="contact-copy reveal reveal-delay-1">
+                        If your business has the reputation but not the online presence to match,
+                        send us a message with your business name and what you need.
+                    </p>
+
+                    <div class="contact-actions reveal reveal-delay-2">
+                        <a href="https://wa.me/27636929023?text=Hi%20ByNeo%20Studio%2C%20I%27d%20like%20to%20start%20a%20project." target="_blank" rel="noopener noreferrer" class="button button-dark">
+                            <span>Start a project on WhatsApp</span>
+                            <span class="button-arrow" aria-hidden="true">↗︎</span>
+                        </a>
+                        <a href="mailto:byneostudio.za@gmail.com?subject=New%20project%20enquiry" class="text-link contact-email">byneostudio.za@gmail.com</a>
+                    </div>
+                </div>
+
+            </div>
         </section>
 
     </main>
 
-
-
-    <!-- =====================================================
-         FOOTER
-    ====================================================== -->
-
     <footer class="site-footer">
-
         <div class="container footer-inner">
-
             <div class="footer-brand">
-
-                <span>
-                    BYNEO<span>.</span>
-                </span>
-
-                <small>
-                    DIGITAL STUDIO
-                </small>
-
+                <span>BYNEO<span>.</span></span>
+                <small>WEB DESIGN &amp; BRANDING STUDIO</small>
             </div>
-
 
             <div class="footer-right">
-
-                <span>
-                    © <span id="year"></span> ByNeo Studio
-                </span>
-
-                <span>
-                    South Africa
-                </span>
-
-                <a href="https://www.instagram.com/byneo.studio.za/" target="_blank" rel="noopener noreferrer">
-                    Instagram ↗︎
-                </a>
-
+                <span>© <span id="year">2026</span> ByNeo Studio</span>
+                <span>Boksburg, Gauteng</span>
+                <a href="mailto:byneostudio.za@gmail.com">Email</a>
+                <a href="https://wa.me/27636929023" target="_blank" rel="noopener noreferrer">WhatsApp ↗︎</a>
+                <a href="https://www.instagram.com/byneo.studio.za/" target="_blank" rel="noopener noreferrer">Instagram ↗︎</a>
             </div>
-
         </div>
-
     </footer>
 
-
-    <script src="js/main.js"></script>
-
+    <script src="js/main.js" defer></script>
 </body>
 </html>

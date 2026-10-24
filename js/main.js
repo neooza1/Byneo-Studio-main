@@ -34,6 +34,14 @@ if (menuToggle && mobileNav) {
   });
 
 
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && mobileNav.classList.contains("open")) {
+      menuToggle.click();
+      menuToggle.focus();
+    }
+  });
+
+
   const mobileLinks = mobileNav.querySelectorAll("a");
 
   mobileLinks.forEach((link) => {
@@ -130,9 +138,11 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
     event.preventDefault();
 
     target.scrollIntoView({
-      behavior: "smooth",
+      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
       block: "start"
     });
+
+    history.replaceState(null, "", targetId);
 
   });
 
@@ -145,7 +155,7 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
 
 const scrollOrb = document.querySelector(".scroll-orb");
 
-if (scrollOrb) {
+if (scrollOrb && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
 
   let ticking = false;
 
@@ -216,7 +226,10 @@ if (scrollOrb) {
 const browsers =
   document.querySelectorAll(".project-browser");
 
-if (browsers.length) {
+const prefersReducedMotion =
+  window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+if (browsers.length && !prefersReducedMotion) {
 
   let browserTicking = false;
 
