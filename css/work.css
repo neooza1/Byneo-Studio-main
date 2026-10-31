@@ -2615,3 +2615,127 @@
     }
 
 }
+
+/* =========================================================
+   R MASILO ATTORNEYS CASE STUDY
+========================================================= */
+
+.case-study-rmasilo {
+  position: relative;
+  padding: 105px 0 125px;
+  background: #0f1a33;
+  color: #f4ece6;
+}
+
+.case-study-rmasilo .case-study-heading h2 span,
+.case-study-rmasilo .case-study-cta h3 span {
+  color: #d9998a;
+}
+
+.case-study-rmasilo .case-detail {
+  border-color: rgba(244, 236, 230, 0.14);
+}
+
+.case-study-rmasilo .case-detail p,
+.case-study-rmasilo .case-study-heading p {
+  color: rgba(244, 236, 230, 0.72);
+}
+
+.rm-strip {
+  margin: 48px 0 0;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.35);
+}
+
+.rm-strip img,
+.rm-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.rm-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 56px;
+}
+
+.rm-gallery-wide {
+  grid-template-columns: 1fr 1.6fr;
+  align-items: start;
+  margin-top: 20px;
+}
+
+.rm-gallery figure {
+  margin: 0;
+}
+
+.rm-gallery figure img {
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.rm-gallery figcaption {
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(244, 236, 230, 0.62);
+}
+
+.case-study-rmasilo .project-tags {
+  margin-top: 40px;
+}
+
+.case-study-rmasilo .project-tags span {
+  border-color: rgba(244, 236, 230, 0.22);
+  color: rgba(244, 236, 230, 0.8);
+}
+
+.case-study-rmasilo .case-study-cta {
+  border-color: rgba(244, 236, 230, 0.14);
+}
+
+.case-study-rmasilo .text-link {
+  color: #f4ece6;
+}
+
+@media (max-width: 760px) {
+  .case-study-rmasilo {
+    padding: 72px 0 88px;
+  }
+
+  .rm-gallery,
+  .rm-gallery-wide {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .rm-gallery-wide figure:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .rm-strip {
+    margin-top: 32px;
+    border-radius: 10px;
+  }
+}
+
+.case-study-rmasilo .case-study-intro > .eyebrow,
+.case-study-rmasilo .case-study-cta .eyebrow,
+.case-study-rmasilo .detail-number {
+  color: rgba(244, 236, 230, 0.55);
+}
+
+@media (max-width: 760px) {
+  .rm-gallery:not(.rm-gallery-wide) figure:first-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 760px) {
+  .rm-gallery-wide {
+    grid-template-columns: 1fr;
+  }
+}

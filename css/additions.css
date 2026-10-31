@@ -446,3 +446,26 @@ img.fit-cover { object-fit: cover; object-position: top center; }
 section[id] {
     scroll-margin-top: 76px;
 }
+
+
+/* ---------- Print / identity case study visual (no browser frame) ---------- */
+
+.project-print {
+    display: block;
+    overflow: hidden;
+    border-radius: var(--radius-md);
+    background: #14203a;
+    box-shadow: 0 30px 70px rgba(8, 17, 14, 0.10);
+    transition: transform 700ms var(--ease), box-shadow 700ms var(--ease);
+}
+
+.project-print:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 40px 90px rgba(8, 17, 14, 0.16);
+}
+
+.project-print img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
