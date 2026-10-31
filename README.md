@@ -10,7 +10,7 @@ This repository contains the ongoing development of the ByNeo Studio website and
 
 ## CURRENT STATUS
 
-**LIVE** at https://byneoportfolio.netlify.app
+**LIVE** at https://byneostudio.co.za
 
 Images live in `assets/work/` (WebP, lowercase, no spaces). Netlify file names are case-sensitive, so always use lowercase-with-dashes names.
 
