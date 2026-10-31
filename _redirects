@@ -2,5 +2,3 @@
 https://byneoportfolio.netlify.app/*  https://byneostudio.co.za/:splat  301!
 http://byneoportfolio.netlify.app/*   https://byneostudio.co.za/:splat  301!
 
-# Clean URL for the work page
-/work.html  /work  301
