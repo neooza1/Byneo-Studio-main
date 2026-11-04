@@ -469,3 +469,13 @@ section[id] {
     width: 100%;
     height: auto;
 }
+
+
+/* ---------- Mobile menu: cover the page so content doesn't show through ---------- */
+
+body:not(.work-page) .mobile-nav {
+    height: calc(100vh - 72px);
+    height: calc(100dvh - 72px);
+    overflow-y: auto;
+    background: #08110e;
+}
