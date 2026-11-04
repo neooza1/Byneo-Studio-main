@@ -479,3 +479,10 @@ body:not(.work-page) .mobile-nav {
     overflow-y: auto;
     background: #08110e;
 }
+
+
+/* ---------- No loading screen: the site is static and loads fast on its own ---------- */
+
+.page-loader {
+    display: none !important;
+}
