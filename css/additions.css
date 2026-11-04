@@ -486,3 +486,65 @@ body:not(.work-page) .mobile-nav {
 .page-loader {
     display: none !important;
 }
+
+
+/* ---------- Prices on services ---------- */
+
+.service-list .service p.service-price {
+    margin-top: 14px;
+    font-family: var(--font-display);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: var(--lime);
+}
+
+
+/* ---------- Client quote ---------- */
+
+.quote-section {
+    padding: 40px 0 100px;
+    background: var(--paper);
+    color: var(--text-dark);
+}
+
+.client-quote {
+    margin: 0;
+    max-width: 860px;
+    padding-top: 40px;
+    border-top: 1px solid var(--border-light);
+}
+
+.client-quote blockquote {
+    margin: 0;
+}
+
+.client-quote blockquote p {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(26px, 3.6vw, 44px);
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+}
+
+.client-quote figcaption {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 15px;
+}
+
+.client-quote figcaption span {
+    opacity: 0.65;
+}
+
+.client-quote-dark {
+    margin-top: 56px;
+    border-top-color: rgba(244, 236, 230, 0.14);
+    color: #f4ece6;
+}
+
+.client-quote-dark blockquote p::first-letter {
+    color: #d9998a;
+}
