@@ -548,3 +548,21 @@ body:not(.work-page) .mobile-nav {
 .client-quote-dark blockquote p::first-letter {
     color: #d9998a;
 }
+
+.quote-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+}
+
+.quote-grid .client-quote blockquote p {
+    font-size: clamp(22px, 2.2vw, 30px);
+    line-height: 1.25;
+}
+
+@media (max-width: 760px) {
+    .quote-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+}
