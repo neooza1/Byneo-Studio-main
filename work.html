@@ -8,7 +8,7 @@
   <title>Our Work | ByNeo Studio, Web Design in Gauteng</title>
   <meta
     name="description"
-    content="Brands and websites ByNeo Studio has built for South African businesses, including R Masilo Attorneys, Mokwatedi Dental Clinic and Teffo Consulting."
+    content="Brands and websites ByNeo Studio has built for South African businesses, including R Masilo Attorneys, Mokwatedi Dental Clinic, Teffo Consulting and BC House Café."
   />
 
   <link rel="canonical" href="https://byneostudio.co.za/work">
@@ -566,6 +566,91 @@
 
 
     <!-- =========================================
+         BC HOUSE CAFE
+    ========================================== -->
+    <section class="case-study case-study-bchouse" id="bchouse">
+
+      <div class="container">
+
+        <div class="case-study-intro">
+          <div class="eyebrow reveal">
+            04 / CONTENT &amp; CAMPAIGNS
+          </div>
+          <div class="case-study-heading reveal">
+            <h2>
+              BC House<br />
+              Caf&eacute;<span>.</span>
+            </h2>
+            <p>
+              A caf&eacute; and catering business at Nelson Mandela University.
+              We make the content that follows them from event to event:
+              posters, Instagram carousels, reels, and the pitch deck for
+              their 2027 campus container application.
+            </p>
+          </div>
+        </div>
+
+        <div class="bc-grid">
+          <figure class="reveal">
+            <img src="assets/work/bchouse-games-night.webp" alt="BC House Games Night recap carousel: We said we'd be there" width="900" height="1125" loading="lazy" decoding="async" />
+            <figcaption>Event recap carousel</figcaption>
+          </figure>
+          <figure class="reveal reveal-delay-1">
+            <img src="assets/work/bchouse-284-served.webp" alt="BC House carousel slide: 284 served in one night" width="900" height="1125" loading="lazy" decoding="async" />
+            <figcaption>284 served in one night</figcaption>
+          </figure>
+          <figure class="reveal reveal-delay-2">
+            <img src="assets/work/bchouse-next-stop-mnp.webp" alt="BC House Next Stop campaign poster for the MNP Splash Fun Day" width="900" height="1200" loading="lazy" decoding="async" />
+            <figcaption>&ldquo;Next stop&rdquo; event campaign</figcaption>
+          </figure>
+        </div>
+
+        <div class="bc-grid bc-grid-media">
+          <figure class="reveal">
+            <video class="bc-reel" src="assets/work/bchouse-reel-splash.mp4" poster="assets/work/bchouse-reel-splash-poster.webp" muted loop playsinline preload="none" width="540" height="960" aria-label="BC House Splash Day reel"></video>
+            <figcaption>Splash Day reel</figcaption>
+          </figure>
+          <figure class="reveal reveal-delay-1">
+            <video class="bc-reel" src="assets/work/bchouse-reel-recap.mp4" poster="assets/work/bchouse-reel-recap-poster.webp" muted loop playsinline preload="none" width="540" height="960" aria-label="BC House event recap reel"></video>
+            <figcaption>Event recap reel</figcaption>
+          </figure>
+          <figure class="reveal reveal-delay-2 bc-deck">
+            <img src="assets/work/bchouse-pitch-deck.webp" alt="Cover slide of the BC House 2027 campus container pitch deck" width="1600" height="900" loading="lazy" decoding="async" />
+            <figcaption>Pitch deck for the 2027 campus container</figcaption>
+          </figure>
+        </div>
+
+        <div class="project-tags reveal">
+          <span>EVENT POSTERS</span>
+          <span>INSTAGRAM CAROUSELS</span>
+          <span>REELS</span>
+          <span>PITCH DECK</span>
+        </div>
+
+        <div class="case-study-cta reveal">
+          <div>
+            <span class="eyebrow">INTERESTED?</span>
+            <h3>
+              Need content that keeps<br />
+              your business showing up<span>?</span>
+            </h3>
+          </div>
+          <div class="cta-actions">
+            <a href="https://wa.me/27636929023?text=Hi%20ByNeo%20Studio%2C%20I%20saw%20the%20BC%20House%20work%20and%20I%27d%20like%20something%20similar." class="text-link" target="_blank" rel="noopener noreferrer">
+              WhatsApp ByNeo <span>↗︎</span>
+            </a>
+            <a href="https://www.instagram.com/byneo.studio.za/" class="text-link" target="_blank" rel="noopener noreferrer">
+              More on Instagram <span>↗︎</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
          BAHAMA GALLERY
     ========================================== -->
     <section class="concept-section" id="bahama">
@@ -575,7 +660,7 @@
         <div class="concept-header">
 
           <div class="eyebrow reveal">
-            04 / CONCEPT
+            05 / CONCEPT
           </div>
 
           <div class="concept-header-copy reveal">
@@ -641,42 +726,6 @@
 
 
         <div class="other-work-grid">
-
-          <!-- BC HOUSE -->
-          <a
-            href="https://www.instagram.com/byneo.studio.za/"
-            class="other-project reveal"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="See more creative work like BC House Cafe on Instagram"
-          >
-
-            <div class="other-project-number">
-              05
-            </div>
-
-            <div class="other-project-visual bc-house-visual">
-
-              <img
-                src="assets/work/bc-house-cafe-poster.webp" width="1254" height="1254"
-                alt="BC House Cafe promotional poster"
-                loading="lazy"
-                decoding="async"
-              />
-
-            </div>
-
-            <div class="other-project-info">
-              <div>
-                <span>DIGITAL CREATIVE</span>
-                <h3>BC House Cafe</h3>
-              </div>
-
-              <span class="project-symbol">↗︎</span>
-            </div>
-
-          </a>
-
 
           <!-- NEGO -->
           <a
@@ -853,6 +902,19 @@
 
 
   <script src="js/main.js" defer></script>
+  <script>
+    (function () {
+      var reels = document.querySelectorAll('.bc-reel');
+      if (!('IntersectionObserver' in window)) return;
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.play().catch(function () {}); }
+          else { e.target.pause(); }
+        });
+      }, { threshold: 0.4 });
+      reels.forEach(function (v) { io.observe(v); });
+    })();
+  </script>
 
 </body>
 </html>

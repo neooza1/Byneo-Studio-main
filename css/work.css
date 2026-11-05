@@ -2739,3 +2739,65 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+/* =========================================================
+   BC HOUSE CAFE
+========================================================= */
+
+.case-study-bchouse {
+  position: relative;
+  padding: 105px 0 125px;
+  background: var(--work-dark);
+  color: var(--work-paper);
+  border-top: 1px solid rgba(241, 238, 229, 0.08);
+}
+
+.case-study-bchouse .case-study-intro > .eyebrow,
+.case-study-bchouse .case-study-cta .eyebrow { color: rgba(241, 238, 229, 0.5); }
+.case-study-bchouse .case-study-heading p { color: rgba(241, 238, 229, 0.7); }
+.case-study-bchouse .case-study-heading h2 span,
+.case-study-bchouse .case-study-cta h3 span { color: #f5c518; }
+
+.bc-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 56px;
+  align-items: start;
+}
+
+.bc-grid-media {
+  grid-template-columns: 1fr 1fr 1.6fr;
+  margin-top: 20px;
+}
+
+.bc-grid figure { margin: 0; }
+
+.bc-grid img,
+.bc-grid video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  background: #111;
+}
+
+.bc-grid figcaption {
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(241, 238, 229, 0.6);
+}
+
+.case-study-bchouse .project-tags { margin-top: 40px; }
+.case-study-bchouse .project-tags span { border-color: rgba(241, 238, 229, 0.22); color: rgba(241, 238, 229, 0.8); }
+.case-study-bchouse .case-study-cta { border-color: rgba(241, 238, 229, 0.12); }
+.case-study-bchouse .text-link { color: var(--work-paper); }
+
+@media (max-width: 760px) {
+  .case-study-bchouse { padding: 72px 0 88px; }
+  .bc-grid, .bc-grid-media { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .bc-grid:not(.bc-grid-media) figure:last-child,
+  .bc-grid-media .bc-deck { grid-column: 1 / -1; }
+}
