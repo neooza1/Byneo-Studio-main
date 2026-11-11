@@ -2,3 +2,6 @@
 https://byneoportfolio.netlify.app/*  https://byneostudio.co.za/:splat  301!
 http://byneoportfolio.netlify.app/*   https://byneostudio.co.za/:splat  301!
 
+
+# Internal notes are not part of the public site
+/README.md  /404.html  404!

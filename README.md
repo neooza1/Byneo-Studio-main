@@ -79,3 +79,11 @@ BYNEO-STUDIO/
     │
     ├── icons/
     └── logos/
+
+---
+
+## SECURITY NOTE
+
+`_headers` sets a Content-Security-Policy that only allows inline scripts by their SHA-256 hash.
+If you change an inline `<script>` in any HTML page, its hash changes and the browser will block it:
+recalculate the hash and update `_headers`.
