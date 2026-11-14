@@ -319,3 +319,49 @@ window.addEventListener(
 
   }
 );
+
+
+/* =========================================================
+   FLOATING WHATSAPP BUTTON
+   Visible after the hero, hidden while a contact section
+   is on screen (it already has its own WhatsApp button).
+========================================================= */
+
+const waFloat = document.querySelector(".wa-float");
+
+if (waFloat) {
+
+  const heroBlock = document.querySelector(".hero, .work-hero");
+  const contactBlock = document.querySelector("#contact, #work-contact");
+
+  if ("IntersectionObserver" in window && heroBlock) {
+
+    let heroOnScreen = true;
+    let contactOnScreen = false;
+
+    const updateWaFloat = () => {
+      waFloat.classList.toggle(
+        "is-visible",
+        !heroOnScreen && !contactOnScreen
+      );
+    };
+
+    new IntersectionObserver((entries) => {
+      heroOnScreen = entries[0].isIntersecting;
+      updateWaFloat();
+    }).observe(heroBlock);
+
+    if (contactBlock) {
+      new IntersectionObserver((entries) => {
+        contactOnScreen = entries[0].isIntersecting;
+        updateWaFloat();
+      }).observe(contactBlock);
+    }
+
+  } else {
+
+    waFloat.classList.add("is-visible");
+
+  }
+
+}
