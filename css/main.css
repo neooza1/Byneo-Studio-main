@@ -1623,3 +1623,61 @@ a {
     }
 
 }
+
+/* =========================================================
+   FLOATING WHATSAPP BUTTON (phones and tablets only)
+   Shown once the visitor scrolls past the hero, hidden again
+   when the contact section is on screen.
+========================================================= */
+
+.wa-float {
+    display: none;
+}
+
+@media (max-width: 860px) {
+    .wa-float {
+        position: fixed;
+        right: 16px;
+        bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+        z-index: 900;
+
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+
+        padding: 14px 18px;
+        border-radius: 999px;
+
+        background: var(--lime);
+        color: var(--text-dark);
+        box-shadow: 0 10px 30px rgba(8, 17, 14, 0.35);
+
+        font-family: var(--font-display);
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 1;
+        text-decoration: none;
+
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(12px);
+        transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
+    }
+
+    .wa-float.is-visible {
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+    }
+
+    .wa-float:focus-visible {
+        outline: 2px solid var(--text-dark);
+        outline-offset: 3px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .wa-float {
+        transition: none;
+    }
+}
